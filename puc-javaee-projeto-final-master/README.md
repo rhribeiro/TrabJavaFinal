@@ -1,5 +1,6 @@
 # puc-javaee-projeto-final
 
+
 ### 1. Executar Docker MongoDB e RabbitMQ
 #### 1.1. MongoDB:
 ```
@@ -31,8 +32,8 @@ POST http://localhost:8080/api/v1/companies
 
 ```
 {
-	"name": "Albuquerque Barros",
-	"email": "abconsultoria@gmail.com"
+	"name": "COMPANY",
+	"email": "rhribeiro@gmail.com"
 }
 ```
 
@@ -40,8 +41,8 @@ Resposta:
 ```
 {
     "id": "f51f2917-ca92-48a2-950c-aea4ce276891",
-    "name": "Albuquerque Barros",
-    "email": "abconsultoria@gmail.com",
+    "name": "COMPANY",
+    "email": "rhribeiro@gmail.com",
     "timestamp": "2018-08-07 00:13:31.505"
 }
 ```
@@ -54,16 +55,11 @@ GET http://localhost:8080/api/v1/companies
 Resposta:
 ```
 [
-    {
-        "id": "5aa40ec3-4620-4c92-a5b5-52cf868604bf",
-        "name": "Albuquerque Barros (exemplo 2)",
-        "email": "abconsultoria_ex2@gmail.com",
-        "timestamp": "2018-08-07 00:14:54.59"
-    },
+    
     {
         "id": "f51f2917-ca92-48a2-950c-aea4ce276891",
-        "name": "Albuquerque Barros",
-        "email": "abconsultoria@gmail.com",
+        "name": "COMPANY",
+        "email": "rhribeiro@gmail.com",
         "timestamp": "2018-08-07 00:13:31.505"
     }
 ]
@@ -76,8 +72,8 @@ POST http://localhost:8080/api/v1/investors/
 ```
 ```
 {
-        "name": "Allan Silva",
-        "email": "allanc85@gmail.com"
+        "name": "Rodrigo Heleno Ribeiro",
+        "email": "rhribeiro@gmail.com"
 }
 ```
 
@@ -85,8 +81,8 @@ Resposta:
 ```
 {
     "id": "160c8e0f-2cf8-4918-a2b7-60021947f5da",
-    "name": "Allan Silva",
-    "email": "allanc85@gmail.com",
+    "name": "Rodrigo Heleno Ribeiro",
+    "email": "rhribeiro@gmail.com",
     "timestamp": "2018-08-07 00:17:42.87"
 }
 ```
@@ -101,13 +97,13 @@ Resposta:
 [
     {
         "id": "160c8e0f-2cf8-4918-a2b7-60021947f5da",
-        "name": "Allan Silva",
-        "email": "allanc85@gmail.com",
+        "name": "Rodrigo Heleno Ribeiro",
+        "email": "rhribeiro@gmail.com",
         "timestamp": "2018-08-07 00:17:42.87"
     },
     {
         "id": "5d29ccbd-1a57-47c8-938b-65bcb80927a7",
-        "name": "Allan Silva (hotmail)",
+        "name": "Rodrigo Heleno Ribeiro (hotmail)",
         "email": "allancristian@hotmail.com",
         "timestamp": "2018-08-07 00:18:04.131"
     }
@@ -153,7 +149,7 @@ Resposta:
         "quantity": 10000,
         "quantityCompany": 10000,
         "initialPrice": 20,
-        "timestamp": "2018-08-07 00:22:44.006"
+        "timestamp": "2018-08-11 22:22:44.006"
     },
     {
         "id": "1b325db6-f68b-4b12-8845-586639facca3",
@@ -161,7 +157,7 @@ Resposta:
         "quantity": 300000,
         "quantityCompany": 300000,
         "initialPrice": 15,
-        "timestamp": "2018-08-07 00:23:31.838"
+        "timestamp": "2018-08-11 22:23:31.838"
     }
 ]
 ```
@@ -204,10 +200,10 @@ Resposta:
         "quantity": 2000,
         "quantityBought": 0,
         "price": 19,
-        "timestamp": "2018-08-07 00:38:33.477",
+        "timestamp": "2018-08-11 22:38:33.477",
         "investor": {
             "id": "5d29ccbd-1a57-47c8-938b-65bcb80927a7",
-            "name": "Allan Silva (hotmail)",
+            "name": "Rodrigo Heleno Ribeiro (hotmail)",
             "email": "allancristian@hotmail.com",
             "timestamp": "2018-08-07 00:18:04.131"
         },
@@ -217,7 +213,7 @@ Resposta:
             "quantity": 10000,
             "quantityCompany": 0,
             "initialPrice": 20,
-            "timestamp": "2018-08-07 00:22:44.006"
+            "timestamp": "2018-08-11 22:22:44.006"
         }
     },
     {
@@ -225,11 +221,11 @@ Resposta:
         "quantity": 7000,
         "quantityBought": 5000,
         "price": 20,
-        "timestamp": "2018-08-07 00:33:19.088",
+        "timestamp": "2018-08-11 22:33:19.088",
         "investor": {
             "id": "160c8e0f-2cf8-4918-a2b7-60021947f5da",
-            "name": "Allan Silva",
-            "email": "allanc85@gmail.com",
+            "name": "Rodrigo Heleno Ribeiro",
+            "email": "rhribeiro@gmail.com",
             "timestamp": "2018-08-07 00:17:42.87"
         },
         "stock": {
@@ -238,7 +234,7 @@ Resposta:
             "quantity": 10000,
             "quantityCompany": 0,
             "initialPrice": 20,
-            "timestamp": "2018-08-07 00:22:44.006"
+            "timestamp": "2018-08-11 22:22:44.006"
         }
     },
     {
@@ -246,20 +242,21 @@ Resposta:
         "quantity": 4000,
         "quantityBought": 0,
         "price": 17.5,
-        "timestamp": "2018-08-07 00:38:51.479",
+        "timestamp": "2018-08-11 22:38:51.479",
         "investor": {
             "id": "5d29ccbd-1a57-47c8-938b-65bcb80927a7",
-            "name": "Allan Silva (hotmail)",
+            "name": "Rodrigo Heleno Ribeiro (hotmail)",
             "email": "allancristian@hotmail.com",
-            "timestamp": "2018-08-07 00:18:04.131"
+            "timestamp": "2018-08-11 22:18:04.131"
         },
+        
         "stock": {
             "id": "6b545954-e0b3-4138-af9f-1a6dcb132502",
             "name": "AB1",
             "quantity": 10000,
             "quantityCompany": 0,
             "initialPrice": 20,
-            "timestamp": "2018-08-07 00:22:44.006"
+            "timestamp": "2018-08-11 22:22:44.006"
         }
     }
 ]
@@ -276,7 +273,7 @@ POST http://localhost:8080/api/v1/stocks/sell/{stockId}/{investorId}
 {
     "stockId": {stockId},
     "investorId": {investorId},
-    "quantity": 1000,
+    "quantity": 50,
     "price": 19
 }
 ```
@@ -292,10 +289,10 @@ GET http://localhost:8080/api/v1/stocks/sell/
     {
         "id": "80de4047-a049-4047-a665-322327b5311a",
         "companyOffer": true,
-        "quantity": 10000,
+        "quantity": 50,
         "quantitySold": 0,
-        "price": 30,
-        "timestamp": "2018-08-07 00:25:52.357",
+        "price": 10,
+        "timestamp": "2018-08-11 22:25:52.357",
         "investor": null,
         "stock": {
             "id": "0ea96a40-9dc7-4cec-995b-1a2d13d0fe6f",
@@ -303,24 +300,25 @@ GET http://localhost:8080/api/v1/stocks/sell/
             "quantity": 10000,
             "quantityCompany": 10000,
             "initialPrice": 30,
-            "timestamp": "2018-08-07 00:25:52.33"
+            "timestamp": "2018-08-11 22:25:52.33"
         }
     },
+    
     {
         "id": "bd0d3f36-65f3-4833-90c8-b7f684d18575",
         "companyOffer": true,
-        "quantity": 300000,
+        "quantity": 50,
         "quantitySold": 0,
         "price": 15,
-        "timestamp": "2018-08-07 00:23:31.864",
+        "timestamp": "2018-08-11 22:23:31.864",
         "investor": null,
         "stock": {
             "id": "1b325db6-f68b-4b12-8845-586639facca3",
-            "name": "AB2",
+            "name": "Rodrigo",
             "quantity": 300000,
             "quantityCompany": 300000,
             "initialPrice": 15,
-            "timestamp": "2018-08-07 00:23:31.838"
+            "timestamp": "2018-08-11 22:23:31.838"
         }
     }
 ]
@@ -333,7 +331,7 @@ Assunto:
 Notificação de venda ação 6b545954-e0b3-4138-af9f-1a6dcb132502
 
 Corpo do e-mail:
-5000 ações foram vendidas com sucesso no valor de 20.0 (preço unitário).
+50 ações foram vendidas com sucesso no valor de 15.0 (preço unitário).
 ```
 
 ##### 5.6.2. Compra realizada com sucesso
@@ -342,5 +340,5 @@ Assunto:
 Notificação de compra ação 6b545954-e0b3-4138-af9f-1a6dcb132502
 
 Corpo do e-mail:
-1500 ações foram compradas com sucesso no valor de 20.0 (preço unitário).
+50 ações foram compradas com sucesso no valor de 15.0 (preço unitário).
 ```
